@@ -1,4 +1,3 @@
-# sarahluepker.github.io
-Sarah's website
-Wow this is really great
-![sarah](/img/sarah.JPG)
+# sarahluepker.com
+
+Sarah's Website
