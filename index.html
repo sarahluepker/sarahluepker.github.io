@@ -5,7 +5,6 @@
     }
     html body{        
         background-color: rgb(223, 245, 248); 
-        padding-top: 106px;
     }
     .logo{
         height: 80px;
@@ -48,6 +47,18 @@
     body .carousel-control-next-icon {
         background-image: url("/img/next.svg");
     }
+    @media (max-width: 580px) {  
+        body h1 {font-size:1.5rem !important;} /*1rem = 16px*/
+        body .lead{font-size: 1rem !important;}
+    }
+    @media (min-width: 767px) {
+    html body {
+        margin-top: 108px;
+    }
+    html .navbar{
+        position: fixed-top !important;
+    }      
+}
 
 
     
@@ -62,7 +73,7 @@
         <title>Sarah Luepker</title>
     </head>
     <body>
-        <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+        <nav class="navbar navbar-light bg-light navbar-expand-md">
             <a href="#" class="navbar-brand"><img class="logo" src="/img/logo.svg"></a>
             <span class="navbar-text my-auto mr-auto h3">
                 Sarah Luepker
@@ -121,7 +132,7 @@
         </div>
         <div class="jumbotron jumbotron-fluid mb-0" id="jumbo-bottom">
                 <div class="container">
-                    <p class="display-3 h1-responsive">Bold statement about my work</p>
+                    <h1 class="display-3">bold statement about my work</h1>
                     <p class="lead">*related to statement*</p>
                 </div>
         </div>
