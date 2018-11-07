@@ -1,0 +1,62 @@
+
+.modal.and.carousel {
+    position: fixed; 
+}
+.row {
+    margin-top: 75px;
+    margin-left:0!important;
+    margin-right:0!important;
+    padding: 0!important;
+}
+.carousel-inner{
+    height:90vh!important;
+    width:auto!important;
+    padding-left: 0px;  
+    padding-right: 0px;
+}
+html .modal-dialog{
+    width:auto;
+    max-width:90vw;
+    padding-left: 0px;  
+    padding-right: 0px;
+}
+html .modal-body {
+    width:auto;
+    padding-left: 0px;  
+    padding-right: 0px;
+}
+html .modal-content{
+    width:auto;
+    padding-left: 0px;  
+    padding-right: 0px;
+}
+html .carousel-item{
+    width:90vw;
+    padding-left: 0px;  
+    padding-right: 0px;
+}
+.img-gallery{
+    object-fit: cover;
+    width: 400px!important; 
+}   
+.img-modal{
+    height:90vh!important;
+    width:auto!important;
+    padding-left: auto;
+    padding-right: auto;
+}
+.col-auto{
+    width: 400px!important; 
+    height:250px!important;
+    overflow:hidden;
+    border-radius: 5px; 
+    padding:10px!important;
+}
+@media (max-width: 950px) {
+    .img-gallery{
+        width: 100px!important; 
+    }
+    .col-auto{
+        padding:5px!important;
+    }
+}
