@@ -1,5 +1,5 @@
 const fs = require('fs');
-let template = fs.readFileSync('/template/template.html', 'utf8').split('`');
+let template = fs.readFileSync('./template/template.html', 'utf8').split('`');
 
 let galleries = fs.readdirSync('.');
 
@@ -37,7 +37,7 @@ galleries.forEach(gallery=>{
         if (err) throw err;
         console.log('file saved to ./'+gallery+'/index.html');
     });   
-    fs.copyFile ('/template/style.css','./'+gallery+'/style.css',(err) => {  
+    fs.copyFile ('./template/style.css','./'+gallery+'/style.css',(err) => {  
         if (err) throw err;
         console.log('style.css copied');
     });   

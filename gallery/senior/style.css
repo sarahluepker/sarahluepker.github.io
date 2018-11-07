@@ -17,40 +17,45 @@
 html .modal-dialog{
     width:auto;
     max-width:90vw;
-    padding-left: 0px;  
-    padding-right: 0px;
 }
 html .modal-body {
     width:auto;
-    padding-left: 0px;  
-    padding-right: 0px;
+    position: relative;
+    top: 0; bottom:0; left: 0; right:0;
 }
 html .modal-content{
     width:auto;
-    padding-left: 0px;  
-    padding-right: 0px;
+    position: relative;
+    top: 0; bottom:0; left: 0; right:0;
 }
 html .carousel-item{
-    width:90vw;
-    padding-left: 0px;  
-    padding-right: 0px;
+    width:auto;
+    margin:auto;
 }
-.img-gallery{
-    object-fit: cover;
-    width: 400px!important; 
-}   
+  
 .img-modal{
     height:90vh!important;
     width:auto!important;
-    padding-left: auto;
-    padding-right: auto;
+    width: 100%;
+    height:auto;
+    position: relative;
+    top: 0; bottom:0; left: 0; right:0;
+    margin: auto;
 }
+.img-gallery{
+    width: 100%;
+    height:auto;
+    position: absolute;
+    top: 0; bottom:0; left: 0; right:0;
+    margin: auto;
+} 
 .col-auto{
     width: 400px!important; 
     height:250px!important;
     overflow:hidden;
     border-radius: 5px; 
-    padding:10px!important;
+    padding:0!important;
+    margin:10px!important;
 }
 @media (max-width: 950px) {
     .img-gallery{
