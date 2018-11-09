@@ -1,6 +1,7 @@
 const fs = require('fs');
 let template = fs.readFileSync('./template/template.html', 'utf8').split('`');
 
+
 let galleries = fs.readdirSync('.');
 
 for(index = galleries.length - 1;index >=0;index--){ //have to loop goofy so I can kill elements
@@ -13,7 +14,7 @@ galleries.forEach(gallery=>{
     let files = fs.readdirSync('./'+gallery); //pull in the files in the folder
 
     for(index = files.length - 1;index >=0;index--){
-        if(!RegExp('(?:jpg|png|JPG)').test(files[index])) //filter out files that dont end in jpg/png
+        if(!RegExp('(?:jpg|png|JPG|bmp)').test(files[index])) //filter out files that dont end in jpg/png
             files.splice(index,1);
     }
 

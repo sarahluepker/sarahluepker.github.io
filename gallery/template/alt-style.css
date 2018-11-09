@@ -39,19 +39,27 @@ html .carousel-item{
 
 }
 .img-gallery{
-    width: 100%;
-    height:auto;
-    position: absolute;
-    top: 0; bottom:0; left: 0; right:0;
+    max-width: 23vw; 
+    width: auto;
+    height: 100%;
+    position: relative;   
     margin: auto;
+    
+    border-radius: 5px; 
+    
 } 
-.col-auto{
-    width: 23vw!important; 
+body{
+    background-color: #f9f9f9;
+}
+html .col-auto{
     height:15vw!important;
-    overflow:hidden;
+    flex: 0 0 auto;
+    max-width: none;
+    /*overflow:hidden;*/
     border-radius: 5px; 
     padding:0!important;
     margin:.4vw!important;
+  
 }
 @media (max-width: 600px) {
     html .modal-dialog{

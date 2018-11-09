@@ -1,4 +1,22 @@
 <!doctype html>
+<style>
+    html .col-auto {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius:10px;
+        width:28vw;
+        text-align: center;
+        overflow:hidden;
+        margin: auto;
+        
+    }
+    .card-container {
+        margin-top:10vh;
+    }
+    .gallery-img{
+        width:100%;
+        padding: 5px;
+    }
+</style>
 <html lang="en">
     <head> <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -31,12 +49,28 @@
             </div>  
             
         </nav>
-        <div class="jumbotron jumbotron-fluid">
+        <div class="card-container row">
+            <div class="gallery-card col-auto">
+                <img src="./pottery/teapot.jpg" alt="Norway" class="gallery-img">
                 <div class="container">
-                <h1 class="display-3">Welcome to my Gallery</h1>
-                <a href="/gallery/pottery">click me for pottery</a>
-                <a href="/gallery/sculpture">the other one</a>
+                    <p>Hardanger, Norway</p>
+                </div>
+            </div>
+            <div class="gallery-card col-auto">
+                <img src="./pottery/teapot.jpg" alt="Norway" class="gallery-img">
+                <div class="container">
+                    <p>Hardanger, Norway</p>
+                </div>
+            </div>
+            <div class="gallery-card col-auto">
+                    <img src="./pottery/teapot.jpg" alt="Norway" class="gallery-img">
+                    <div class="container">
+                    <p>Hardanger, Norway</p>
+                </div>
+            </div>
         </div>
+        <a href="/gallery/pottery">click me for pottery</a>
+        <a href="/gallery/sculpture">the other one</a>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
