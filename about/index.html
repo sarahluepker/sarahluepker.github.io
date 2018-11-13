@@ -1,10 +1,78 @@
 <!doctype html>
 <style>
+    
     html .img-profile{
-        margin-bottom:20px;
-        border-width: 1px;
-        border-color: black;
-        border-style: solid
+        margin:20px 0;
+        padding:30px;
+    }
+    html body{        
+        background-color:#fff; 
+    }
+    .row{
+        margin-top:50px;
+    }
+    .logo{
+        height: 80px;
+    }
+    body .navbar{
+        border-width: 0;
+        background-color: #f9f9f9;
+    }
+    .info{
+        text-align: center;
+    }
+    .info h2{
+        
+        font: 2em -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .info h5 {
+        margin-bottom: 20px;
+    }
+    .info p{
+        color: #444;
+        margin-bottom:15px
+    }
+    .info p a{
+        text-decoration: none;
+        color: rgb(4, 0, 255);
+    }
+    .contact{
+        background-color:#10a5fc;
+        padding: 5px 25px;
+        text-decoration: none;
+        border-radius:20px;
+        display:inline-block;
+        color:  white ;
+    }
+    .contact:hover{
+        text-decoration: none;
+        color: white;
+    }
+    .about h3{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-family: 'Courgette', cursive;
+    }
+    .about p{
+        font-family: 'Work Sans', sans-serif;
+        text-indent:40px;
+    }
+    .about .closing{
+        font-style: italic;
+        font-size: 1.25em;
+    }
+    @media (max-width: 991px) {
+        html .col-lg{
+        margin-bottom: 50px;
+        }
+    }
+    @media (min-width: 1200px){
+        html .container {
+            max-width: 1300px;
+        }
     }
 </style>
 <html  lang="en">
@@ -13,11 +81,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Courgette|Lato|Work+Sans" rel="stylesheet">
         <title>About</title>
     </head>
-    <body style="padding-top: 106px;">
-        <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
-            <a href=".." class="navbar-brand"><img class="logo "  style="height: 80px;" src="/img/logo.svg"></a>
+    <body>
+        <nav class="navbar navbar-light navbar-expand-md">
+            <a href=".." class="navbar-brand "><img class="logo" src="/img/logo.svg"></a>
             <span class="navbar-text my-auto mr-auto h3">
                 Sarah Luepker
             </span>
@@ -25,9 +94,9 @@
                     <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse h5" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto ">
                     <li class="navbar-item">
-                        <a href=".." class="nav-link">Home</a>
+                        <a href=".." class="nav-link ">Home</a>
                     </li>
                     <li class="navbar-item">
                         <a href="/about" class="nav-link active">About</a>
@@ -39,24 +108,32 @@
             </div>  
             
         </nav>
-        <div class="container pt-5 pb-5">
+        <div class="container">
                 <div class="row">
-                  <div class="col-lg">
+                    <div class="col-lg info">
+                    
                         <img class="img-profile " style="width:100%;" src="/img/sarah-prof.jpg">
                         <h2>Sarah Luepker</h2>
-                        &#9;These days, practically anything can be manufactured at an industrial level, from dinnerware to the cellphones in our pockets. Factory produced things may be cheap and convenient, but they also come with a price. We are now far removed from the things we use everyday. Most of our quotidian interactions with the world around us have lost personality and connectedness. Drinking from a factory-made mug can make the act of drinking a neutral, passive act. On the other hand, drinking from a unique handmade mug can make that experience unique as well.  
+                        <h5>Oak Park, IL</h5>
+                        <p>B.A. from Lawrence University - Appleton, WI</p>
+                        <p>Find my work at <a href="https://www.gptetrev.com/studio">GP Tetrev Pottery</a></p>
+                        <a href="mailto:ceramics@sarahluepker.com" class="contact">Contact me </a>
 
-
-                  </div>
-                  <div class="col-lg">
-                    &#9;Utilizing art in such an essential everyday act as eating can elevate mundane experiences and bring beauty to otherwise unfelt moments. Returning craft and personal touch to the objects that surround us, from mugs to quilts to decorative objects is a good way to encourage connection. Pottery can ground and center us, puns intended. However, there is room in the functional world for fine art, and I believe that a pot can be more than a pot when infused with the right feeling. Simply look at Grayson Perry or Steven Young Lee to see how a pot can becomes a statement. I am similarly interested in that space between craft and fine art, and believe that there is room for both within a functional object. That being said, some things I find are best said with sculpture, and I occasionally find myself gravitating towards sculpture when I have an idea that might be too restricted by a need to be functional. 
-                    Ultimately, my goal is to provide art for the everyday, accessible art that people will use and which has the potential to carry beauty into any given moment.
                     </div>
-                  <div class="col-lg">
-                    <p> B.A. from Lawrence University - Appleton, WI
-                        Based in Oak Park, IL
-                        Contact me: ceramics@sarahluepker.com</p>
-                  </div>
+                    <div class="col-lg about">
+                        
+                        <h3>Craft</h3>
+                        <p>These days, practically anything can be manufactured at an industrial level, from dinnerware to the cellphones in our pockets. Factory produced things may be cheap and convenient, <i>but they come with a price.</i> We are now far removed from the things we use everyday. Most of our quotidian interactions with the world around us have lost personality and connectedness. Drinking from a factory-made mug can make the act of drinking a neutral, passive act.</p> 
+                        <p>On the other hand, drinking from a unique handmade mug can make that experience unique as well. Utilizing art in such an essential everyday act as eating can elevate mundane experiences and bring beauty to otherwise unfelt moments. Returning craft and personal touch to the objects that surround us, from mugs to quilts to decorative objects is a good way to encourage connection. Pottery can ground and center us, puns intended.</p>
+
+
+                    </div>  
+                    <div class="col-lg about">
+                            <h3>Fine Art</h3>
+                        <p> There is room in the functional world for fine art, and I believe that a pot can be more than a pot when infused with the right feeling. Simply look at Grayson Perry or Steven Young Lee to see how a pot can becomes a statement. I am similarly interested in that space between craft and fine art, and believe that there is room for both within a functional object. That being said, some things I find are best said with sculpture, and I occasionally find myself gravitating towards sculpture when I have an idea that might be too restricted by a need to be functional. 
+
+                        <p class="closing">Ultimately, my goal is to provide art for the everyday: accessible art that people will use and which has the potential to carry beauty into any given moment.</p>
+                    </div>
                 </div>
               </div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

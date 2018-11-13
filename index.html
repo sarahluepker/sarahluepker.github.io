@@ -18,12 +18,7 @@
         background-color: #f9f9f9;
 
     }
-    body #bottom-statement{
-        text-align:center;
-        margin:100px;
-        font-style: italic;
-        font-size: 30px;
-    }
+
     ol.carousel-indicators li,
     ol.carousel-indicators li.active {
         width: 10px;
@@ -51,13 +46,13 @@
         background-image: url("/img/next.svg");
     }
     
-    @media (max-width: 767px) {  
+    @media (max-width: 1050px) {  
         body .slide{
             width: 100vw;
              height: 66vw;
         }
     }  
-    @media (min-width: 1150px) {  
+    @media (min-width: 1050px) {  
         body #carousel-wrapper{
             margin-top:50px;
             /*
@@ -67,9 +62,12 @@
             background-color: rgb(235, 235, 235);
             border-radius: 10px;
             */
+            box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
+            border-radius: 105px;
         }
         body .slide{
             height:640px !important;
+            
         }
         html .carousel-inner{
             border-radius: 100px;
@@ -125,7 +123,7 @@
                         <img class="d-block w-100 slide" src="/gallery/pottery/IMG_0168.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100 slide" src="/gallery/pottery/teapot.jpg" alt="Second slide">
+                        <img class="d-block w-100 slide" src="/gallery/pottery/teapot.png           " alt="Second slide">
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100 slide" src="/gallery/sculpture/IMG_0776.jpg" alt="Third slide">
@@ -147,9 +145,9 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
     <script>
-    $('.carousel').carousel({
-        interval: 3000
-      })
+        $('.carousel').carousel({
+            interval: 3000
+        })
     </script>
     
 </html>

@@ -1,9 +1,47 @@
+html body{        
+    background-color:#fff; 
+}
+.logo{
+    height: 80px;
+}
+body .navbar{
+    border-width: 0;
+    height:100px;
+}
+.tag{
+    font: 6vw 'Merienda One', Helvetica, sans-serif;
+    color: rgba(0,0,0,0.9);
 
+    text-align: center;
+    margin: 5vh;
+}
+.return-footer{
+    height:60px;
+    width:400px;
+    border-bottom-right-radius:20px;
+    font: 1.75em -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    position: fixed;
+    top: 0;
+    vertical-align: middle; 
+    background-color: #f9f9f9;
+    
+}
+.return{
+    color: #999;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.return-footer:hover{
+    color: #999;
+    text-decoration: none;
+}
 .modal.and.carousel {
     position: fixed; 
 }
 .row {
-    margin-top: 75px;
     margin-left:0!important;
     margin-right:0!important;
     padding: 0!important;
@@ -11,9 +49,9 @@
 
 html .modal-dialog{
     width:80vw;
-    height:40vw;
+    height:75vh;
     max-width: none;
-    margin: 1.75rem auto;
+    margin: 11vh auto auto;
 }
 html .modal-content{
     height: 100%;
@@ -33,10 +71,16 @@ html .carousel-item{
 
   
 .img-modal{
-    height: 100%;
-    display: block;
-    margin:auto;
-
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 .img-gallery{
     width: 100%;
@@ -46,29 +90,45 @@ html .carousel-item{
     margin: auto;
 } 
 .col-auto{
-    width: 23vw!important; 
-    height:15vw!important;
+    width: 20vw!important; 
+    height:12vw!important;
     overflow:hidden;
-    border-radius: 5px; 
+    border-radius: 10px; 
     padding:0!important;
     margin:.4vw!important;
 }
+body .carousel-control-prev-icon {
+    background-image: url("/img/prev.svg");
+    background-size: contain;
+}
+body .carousel-control-next-icon {
+    background-image: url("/img/next.svg");
+}
 @media (max-width: 600px) {
-    html .modal-dialog{
-        width:80vw;
-        height:80vh;
-        max-width: none;
-        margin: 1.75rem auto;
-    }
-    .col-auto{
-    }
-    .img-modal{
-        width: 100%;
-        height: auto;
-        position:absolute;
-        top:0;
-        bottom:0;
-        margin:auto;
     
+    .col-auto{
+        width: 45vw!important; 
+        height:25vw!important;
+    }
+    .return-footer{
+        height:30px;
+        width:150px;
+        border-bottom-right-radius:10px;
+        font-size:1em;
+    }
+
+}
+@media (min-width: 600px) and (max-width: 1400px) {
+    
+    .col-auto{
+        width: 30vw!important; 
+        height:16vw!important;
+    }
+    .return-footer{
+        height:40px;
+        width:200px;
+        border-bottom-right-radius:10px;
+        font-size:1.25em;
     }
 }
+

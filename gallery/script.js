@@ -18,21 +18,21 @@ galleries.forEach(gallery=>{
             files.splice(index,1);
     }
 
-    let html = template[0] + gallery + template[1]; //start to build up html. Inside the first two template blocks is the title
+    let html = template[0] + gallery + template[1] + gallery + template[2]; //start to build up html. Inside the first two template blocks is the title
 
     files.forEach(function(file,i){
-        html += template[2] + i + template[3] + file + template[4];
+        html += template[3] + i + template[4] + file + template[5];
     })
 
-    html += template[5];
+    html += template[6];
 
     files.forEach(function(file,i){
-        html += template[6];
+        html += template[7];
         if(i==0)
             html += ' active';
-        html += template[7] + file + template[8];
+        html += template[8] + file + template[9];
     })
-    html += template[9];
+    html += template[10];
 
     fs.writeFile('./'+gallery+'/index.html',html,(err) => {  
         if (err) throw err;
