@@ -1,6 +1,6 @@
 <!doctype html>
 <style>
-    html .col-md {
+    html .col-lg {
         /*box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);*/
         background-color: #f9f9f9;
         border:solid #e6e6e6 2px;
@@ -13,7 +13,7 @@
         transition: transform 1s;
         
     }
-    html .col-md:hover{
+    html .col-lg:hover{
     color: #999;
     text-decoration: none;
     
@@ -44,8 +44,9 @@
     }
     @media(max-width:767px){
         html .collapsing{
-        position: absolute;
-        padding-bottom: 0;
+            position: absolute;
+            padding-bottom: 0;
+            z-index: 1000;
         }
         .navbar-collapse{
             position: absolute;
@@ -96,19 +97,19 @@
             </div>  
         </nav>
         <div class="card-container row">
-            <a href="/gallery/pottery" class="gallery-card col-md">
+            <a href="/gallery/pottery" class="gallery-card col-lg">
                 <img src="./pottery/IMG_0102.jpg" alt="Norway" class="gallery-img">
                 <div class="container">
                     <p>Pottery</p>
                 </div>
             </a>
-            <a href="/gallery/sculpture" class="gallery-card col-md">
+            <a href="/gallery/sculpture" class="gallery-card col-lg">
                 <img src="./sculpture/IMG_0788.jpg" alt="Norway" class="gallery-img">
                 <div class="container">
                     <p>Sculpture</p>
                 </div>
             </a>
-            <a href="/gallery/senior" class="gallery-card col-md">
+            <a href="/gallery/senior" class="gallery-card col-lg">
                 <img src="./pottery/IMG_0159.jpg" alt="Norway" class="gallery-img">
                 <div class="container">
                     <p>Senior</p>
