@@ -1,8 +1,8 @@
 <!doctype html>
 <style>
-    body #carousel-wrapper{
+     body #carousel-wrapper{
         max-width:1000px;
-        margin-top:20px;
+        margin:20px auto 50px auto;
         overflow: hidden;
     }
     
@@ -18,11 +18,9 @@
         background-color: #f9f9f9;
 
     }
+    
     .navbar-text:hover{
         text-decoration: none;
-    }
-    .navbar-item{
-        text-align: right;
     }
     ol.carousel-indicators li,
     ol.carousel-indicators li.active {
@@ -50,7 +48,26 @@
     body .carousel-control-next-icon {
         background-image: url("/img/next.svg");
     }
-    
+    @media(max-width:767px){
+        html .collapsing{
+        position: absolute;
+        padding-bottom: 0;
+        }
+        .navbar-collapse{
+            position: absolute;
+            top: 75px;
+            right: 0;
+            z-index: 1000;
+            /*background-color: rgb(224, 224, 224);*/
+            background-color: #f9f9f9;
+            padding: 0px 20px 0px 20px;
+            border-radius:  5px 0 0px 10px;
+            text-align: center;
+        }
+        .navbar-nav{
+            padding-bottom: 10px;
+        }
+    }
     @media (max-width: 1050px) {  
         body .slide{
             width: 100vw;
@@ -81,10 +98,6 @@
             border-radius: 100px;
         }
     }  
-
-
-
-    
 
 </style>
 <html lang="en">
