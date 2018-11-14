@@ -1,3 +1,1 @@
-# sarahluepker.com
-
-Sarah's Website
+www.sarahluepker.com
