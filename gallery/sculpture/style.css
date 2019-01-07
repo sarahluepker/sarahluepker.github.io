@@ -6,37 +6,17 @@ html body{
 }
 body .navbar{
     border-width: 0;
-    height:100px;
+    background-color: #f9f9f9;
+}
+.navbar-text:hover{
+    text-decoration: none;
 }
 .tag{
     font: 6vw 'Merienda One', Helvetica, sans-serif;
     color: rgba(0,0,0,0.9);
 
     text-align: center;
-    margin: 5vh;
-}
-.return-footer{
-    height:60px;
-    width:400px;
-    border-bottom-right-radius:20px;
-    font: 1.75em -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    position: fixed;
-    top: 0;
-    vertical-align: middle; 
-    background-color: #f9f9f9;
-    
-}
-.return{
-    color: #999;
-    text-align: center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    
-}
-.return-footer:hover{
-    color: #999;
-    text-decoration: none;
+    padding: 1vh 0 4vh;
 }
 .modal.and.carousel {
     position: fixed; 
@@ -110,12 +90,6 @@ body .carousel-control-next-icon {
         width: 45vw!important; 
         height:25vw!important;
     }
-    .return-footer{
-        height:30px;
-        width:150px;
-        border-bottom-right-radius:10px;
-        font-size:1em;
-    }
 
 }
 @media (min-width: 600px) and (max-width: 1400px) {
@@ -123,12 +97,6 @@ body .carousel-control-next-icon {
     .col-auto{
         width: 30vw!important; 
         height:16vw!important;
-    }
-    .return-footer{
-        height:40px;
-        width:200px;
-        border-bottom-right-radius:10px;
-        font-size:1.25em;
     }
 }
 

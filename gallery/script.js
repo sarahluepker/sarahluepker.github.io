@@ -1,4 +1,6 @@
 const fs = require('fs');
+const sharp = require('sharp');
+
 let template = fs.readFileSync('./template/template.html', 'utf8').split('`');
 
 
@@ -17,11 +19,18 @@ galleries.forEach(gallery=>{
         if(!RegExp('(?:jpg|png|JPG|bmp)').test(files[index])) //filter out files that dont end in jpg/png
             files.splice(index,1);
     }
+    !fs.existsSync('./'+gallery+'/thumb') && fs.mkdirSync('./'+gallery+'/thumb');
+    files.forEach(file=>{
+        sharp('./'+gallery + '/' + file)
+        .resize(600)
+        .toFile('./'+gallery + '/thumb/' + file);
+    });
+
 
     let html = template[0] + gallery + template[1] + gallery + template[2]; //start to build up html. Inside the first two template blocks is the title
 
     files.forEach(function(file,i){
-        html += template[3] + i + template[4] + file + template[5];
+        html += template[3] + i + template[4] + 'thumb/' + file + template[5];
     })
 
     html += template[6];
