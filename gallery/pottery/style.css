@@ -16,7 +16,7 @@ body .navbar{
     color: rgba(0,0,0,0.9);
 
     text-align: center;
-    padding: 1vh 0 4vh;
+    padding: 4vh 0 4vh;
 }
 .modal.and.carousel {
     position: fixed; 
@@ -97,6 +97,34 @@ body .carousel-control-next-icon {
     .col-auto{
         width: 30vw!important; 
         height:16vw!important;
+    }
+}
+@media(max-width:767px){
+    html .collapsing{
+        position: absolute;
+        padding-bottom: 0;
+        z-index: 1000;
+    }
+    .navbar-collapse{
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 1000;
+        /*background-color: rgb(224, 224, 224);*/
+        background-color: #f9f9f9;
+        padding: 0px 20px 0px 20px;
+        border-radius:  5px 0 0px 10px;
+        text-align: center;
+    }
+    .navbar-nav{
+        padding-bottom: 10px;
+    }
+    .tag{
+    font: 40px 'Merienda One', Helvetica, sans-serif;
+    color: rgba(0,0,0,0.9);
+
+    text-align: center;
+    padding: 3vh 0 2vh;
     }
 }
 
